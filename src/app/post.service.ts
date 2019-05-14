@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import {  } from 'rxjs';
 import { Post } from './post';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
-  posts: Post[] = [];
+  private posts: Post[] = [];
   constructor() { }
   getPosts() {
-    return [...this.posts];
+    return this.posts;
   }
   addPosts(title: string, content: string) {
     const post: Post = {title, content};

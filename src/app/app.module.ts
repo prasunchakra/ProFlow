@@ -23,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NoopAnimationsModule,
     MatToolbarModule,
     MatInputModule,
