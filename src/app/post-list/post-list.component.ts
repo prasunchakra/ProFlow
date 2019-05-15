@@ -7,9 +7,7 @@ import { Post } from '../post';
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
-  posts: Post[] = [
-
-  ];
+  posts: Post[];
   constructor(public postservice: PostService) { }
 
   ngOnInit() {
