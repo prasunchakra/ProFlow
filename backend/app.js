@@ -17,9 +17,14 @@ app.post('/api/post/',(req,res,next)=>{
         title:req.body.title,
         content:req.body.content
     });
-    post.save();
-    console.log(post);
-    res.status(201).json({message:'Post Created'});
+    post.save().then((createdPost =>{
+        console.log(post);
+        res.status(201).json({
+            message:'Post Created',
+            postId: createdPost._id
+        });
+    })
+    );
 })
 app.get('/api/post/',(req,res,next)=>{
     Post.find()
@@ -29,6 +34,13 @@ app.get('/api/post/',(req,res,next)=>{
                 posts: documents
             });
     });
+})
+app.delete('/api/post/:id',(req,res,next)=>{
+    Post.deleteOne({_id: req.params.id}).then((response)=>{
+        console.log(response);
+        res.status(200).json({message:'Post deleted !!'});
+    })
+    
 })
 
 module.exports = app
