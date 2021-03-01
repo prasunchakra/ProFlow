@@ -8,8 +8,8 @@ function ToDoComponent(props) {
                 </div>
             <ul className="list-group list-group-flush">
                 {
-                    props.todos.map(todo => (
-                        <ToDoRowItem task={todo} />
+                    props.todos.map((todo,index) => (
+                        <ToDoRowItem key={index}  task={todo} />
                     ))
                 }   
             </ul>
