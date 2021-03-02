@@ -14,7 +14,7 @@ function ToDoComponent(props) {
                 }   
             </ul>
             <div className="card-footer text-muted">
-            <button className="btn btn-success">Mark All Complete</button>
+                <button className="btn btn-success">Mark All Complete</button>
             </div>
         </div>
     )
