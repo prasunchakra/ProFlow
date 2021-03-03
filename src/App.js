@@ -1,16 +1,17 @@
 import React, { useState }  from 'react';
 import ToDoComponent from './components/ToDoComponent';
+import ToDoForm from './components/ToDoForm';
 import './App.css';
   
 function App() {
   const [todos, setTodos] = useState(['Java', 'C++', 'JAvaScript'])
-  function addTodo() {
-   setTodos(todos => [...todos, 'Python'])
+  function addTodo(task) {
+   setTodos(todos => [...todos, task])
   }
   return (
     <div className="container mt-5">
       <ToDoComponent todos={todos}></ToDoComponent>
-      <button className="btn btn-primary" onClick={addTodo}>Add New Todo</button>
+      <ToDoForm addTodo={addTodo} />
     </div>
   );
 }
