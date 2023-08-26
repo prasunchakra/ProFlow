@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/proflow/static/css/main.073c9b0a.css",
-    "main.js": "/proflow/static/js/main.a205b866.js",
-    "static/js/787.28de662f.chunk.js": "/proflow/static/js/787.28de662f.chunk.js",
-    "index.html": "/proflow/index.html",
-    "main.073c9b0a.css.map": "/proflow/static/css/main.073c9b0a.css.map",
-    "main.a205b866.js.map": "/proflow/static/js/main.a205b866.js.map",
-    "787.28de662f.chunk.js.map": "/proflow/static/js/787.28de662f.chunk.js.map"
+    "main.css": "/ProFlow/static/css/main.073c9b0a.css",
+    "main.js": "/ProFlow/static/js/main.c469d347.js",
+    "static/js/787.28de662f.chunk.js": "/ProFlow/static/js/787.28de662f.chunk.js",
+    "index.html": "/ProFlow/index.html",
+    "main.073c9b0a.css.map": "/ProFlow/static/css/main.073c9b0a.css.map",
+    "main.c469d347.js.map": "/ProFlow/static/js/main.c469d347.js.map",
+    "787.28de662f.chunk.js.map": "/ProFlow/static/js/787.28de662f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a205b866.js"
+    "static/js/main.c469d347.js"
   ]
 }
